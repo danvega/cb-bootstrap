@@ -1,0 +1,1 @@
+I got tired of creating a new ColdBox project and having to customize the base template to my liking. I decided to create a template that fits my style. All of the components are written in script and I have create the layouts + views using the bootsrap framework from twitter. There is also a starter admin module, if you don't need it just delete it. 

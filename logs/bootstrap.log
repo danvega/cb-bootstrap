@@ -1,0 +1,4 @@
+"Severity","Appender","Date","Time","Category","Message"
+"INFO","ROLLINGFILEAPPENDER","02/15/2012","08:41:00","coldbox.system.cache.providers.CacheBoxColdBoxProvider","CacheBox Cache: default has been initialized successfully for operation"
+"INFO","ROLLINGFILEAPPENDER","02/15/2012","08:41:00","coldbox.system.cache.providers.CacheBoxColdBoxProvider","CacheBox Cache: TEMPLATE has been initialized successfully for operation"
+"INFO","ROLLINGFILEAPPENDER","02/15/2012","08:41:09","ROOT","PageNotFound: General.foo"
