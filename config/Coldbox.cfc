@@ -12,7 +12,6 @@ component {
 			debugPassword			= "",
 			reinitPassword			= "",
 			handlersIndexAutoReload = false,
-			configAutoReload		= false,
 
 			//Implicit Events
 			defaultEvent			= "general.index",
@@ -87,11 +86,6 @@ component {
 			exclude = []
 		};
 
-		wireBox = {
-			enabled = true,
-			singletonReload=true
-		};
-
 		layoutSettings = {
 			defaultLayout = "Layout.Main.cfm",
 			defaultView   = ""
@@ -103,10 +97,6 @@ component {
 		};
 
 		interceptors = [
-			 {
-			 	class="coldbox.system.interceptors.Autowire",
-			 	properties={}
-			 },
 			{
 				class="coldbox.system.interceptors.SES",
 				properties={}
@@ -115,7 +105,12 @@ component {
 
 		//Mailsettings
 		mailSettings = {
-		};		
+		};	
+		
+		// validations
+		validations = {
+			sharedConstraints = {}
+		};
 
 	}
 
@@ -123,7 +118,10 @@ component {
 		coldbox.debugmode = true;
 		coldbox.handlersIndexAutoReload = true;
 		coldbox.handlerCaching = false;
-
+		
+		// singleton reload
+		wirebox.singletonReload = true;
+		
 		// debugger Settings
 		debugger.showRCPanel = true;
 	}
